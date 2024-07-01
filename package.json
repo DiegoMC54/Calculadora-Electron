@@ -1,0 +1,41 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "Calculadora",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "dist": "electron-builder"
+  
+  },
+  "build": {
+    "appId": "Calculadora",
+    "productName": "Calculadora",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+  
+      "index.html",
+      "index.js",
+      "index.css",
+      "package.json",
+      "package-lock.json",
+      "main.js"
+    ],
+    "win": {
+      "icon": "Icono App.ico"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "devDependencies": {
+    "electron": "^24.0.0",
+    "electron-builder": "^23.6.0"
+  }
+}
